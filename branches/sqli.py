@@ -22,6 +22,9 @@ class SW_SQLI():
 		self.params['column'] = ''
 		self.params['data'] = ''
 		self.params['info'] = ''
+		self.params['numoftable'] = 0
+		self.params['numofcolumn'] = 0
+		self.params['numofrecord'] = 0
 		self.params['log'] = open('log.txt','w')
 	
 	def setLink(self,link):
@@ -49,6 +52,7 @@ class SW_SQLI():
 		self.params['log'].write(q + "\n")
 		
 	def releaseResource(self):
+		print "CAM ON BAN DA SU DUNG!"
 		try:
 			os.remove("debug.html")
 		except:
