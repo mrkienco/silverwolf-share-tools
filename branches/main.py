@@ -3,7 +3,7 @@ from sqli import *
 
 
 ## Setting
-inject_link = 'http://coex.com.vn/?option=hotro&catId=121 '
+inject_link = 'http://example.com/?option=hotro&catId=121 '
 table_name = ''
 column_name = ''
 
